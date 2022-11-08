@@ -1,8 +1,19 @@
-# RUN pip install pexpect glob2 beautifulsoup4==4.9.3 requests==2.2.1 isodate nltk==3.4.5 colorama paramiko==1.18.3 matplotlib==1.1.1 feedparser==4.1 opencv-python==3.1.0.0 SpeechRecognition google-api-python-client==1.6
+pexpect 
+glob2 
+isodate
+colorama
+SpeechRecognition
+beautifulsoup4==4.9.3 
+requests==2.2.1  
+nltk==3.4.5 
+paramiko==1.18.3 
+feedparser==4.1 
+opencv-python==3.1.0.0  
+google-api-python-client==1.6
+rsa==4.0
 
-# https://github.com/grpc/grpc/issues/23190
-pip uninstall rsa
-pip install -v rsa==4.0
-
-
+# Speech Volume Estimator model deps
+# tensorflow==1.14.0
+# keras==2.3.1
+# keras-rl==0.4.2
 
