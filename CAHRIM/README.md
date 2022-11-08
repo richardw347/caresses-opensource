@@ -29,6 +29,7 @@ docker run -it richardw347/caress:latest
 see socket_handlers.py:
 
 * Looks like character-based protocol for message passing between components of the system. That's a critical issue to resolve in progressing the project to the future. Message definitions form a contract between sender and receiver text-based protocols do nothing to preserver the contract!
+* Also there's not much error handling in the socket communications, replacing these with a modern IPC library is a must
 
 #### Google API Client
 
