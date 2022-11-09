@@ -33,6 +33,7 @@ RUN apt-get install -y python-pip python-pyaudio python-numpy python-mysql.conne
 
 RUN mkdir -p /opt/caresses/CAHRIM
 COPY . /opt/caresses/CAHRIM
+COPY caresses-conf.json /opt/caresses/
 WORKDIR /opt/caresses/CAHRIM
 
 RUN pip install -r requirements.txt

@@ -4,12 +4,15 @@ isodate
 colorama
 SpeechRecognition
 beautifulsoup4==4.9.3 
-requests==2.2.1  
+
 nltk==3.4.5 
 paramiko==1.18.3 
 feedparser==4.1 
 opencv-python==3.1.0.0  
+requests==2.2.1  
 google-api-python-client==1.6
+# grpcio<1.40.0 
+# google-cloud-translate
 rsa==4.0
 
 # Speech Volume Estimator model deps
