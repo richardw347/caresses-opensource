@@ -6,10 +6,15 @@ ENV USER root
 RUN apt-get update && \
     apt-get install -y --no-install-recommends ubuntu-desktop && \
     apt-get install -y gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal && \
-    apt-get install -y tightvncserver && \
     apt-get install -y wget && \
-    apt-get install -y tar && \
-    mkdir /root/.vnc
+    apt-get install -y tar
+
+RUN apt-get install -y --no-install-recommends python \
+    libx11-dev libxfixes-dev libxi-dev \
+    libxcb1-dev libx11-xcb-dev libxcb-glx0-dev \
+    libdbus-1-dev libxkbcommon-dev libxkbcommon-x11-dev \
+    binutils g++ make zlib1g-dev libssl-dev \
+    libgl1-mesa-dev xz-utils
 
 # Install Choregraphe Suite 2.5.5.5
 RUN wget -P /root/ https://community-static.aldebaran.com/resources/2.5.5/Choregraphe/choregraphe-suite-2.5.5.5-linux64-setup.run
